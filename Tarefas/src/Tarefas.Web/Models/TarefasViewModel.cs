@@ -1,9 +1,15 @@
+using System.ComponentModel;
 namespace Tarefas.Web.Models
 {
     public class TarefasViewModel
     {
-        [DisplayName(Titulo)]
+        [DisplayName("Código")]
+        public int id {get;set;}
+
+        [DisplayName("Titulo")]
         public string Titulo {get;set;}
+
+        [DisplayName("Titulo")]
         public string Descricao {get;set;}
     }
 }
